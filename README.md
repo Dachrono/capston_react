@@ -38,6 +38,10 @@
 
 **[React capstone project]** This project is about building a mobile web application to check a list of metrics using React and Redux, in this case is with a weather data obtained since opeanweater API .
 
+Link to the presentation video
+[link to video](https://www.loom.com/share/347305db01174bd5aef3bf175eab2819?sid=5a8a824c-3b0b-4530-bc5f-63fbedf4e45c)
+
+
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
@@ -74,7 +78,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://google.com)
+- [Live Demo Link](https://reactcapstonproject.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
