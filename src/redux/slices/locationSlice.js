@@ -1,11 +1,15 @@
 import { createSlice } from '@reduxjs/toolkit';
 
+const initialState = {
+  coord: null,
+};
+
 export const locationsSlice = createSlice({
   name: 'locations',
-  initialState: [],
+  initialState,
   reducers: {
     addLocations(state, action) {
-      console.log(action.payload);
+      state.coord = action.payload;
     },
   },
 });

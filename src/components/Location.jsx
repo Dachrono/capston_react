@@ -1,22 +1,24 @@
-import { useDispatch } from 'react-redux';
 import '../style/Location.css';
-import { addLocations } from '../redux/slices/locationSlice';
+import { useNavigate } from 'react-router-dom';
 
 const Location = () => {
-  const all = { usa: 15, mex: 16 };
-  const Tigger = useDispatch();
+  const nav = useNavigate();
 
   const selectValue = (event) => {
-    const locationSelected = event.target.value;
-    Tigger(addLocations(locationSelected));
+    nav(event.target.value);
   };
 
   return (
     <div className="titleContainer">
       <h1>Metrics | Wheather</h1>
-      <select className="filter" value={all} onChange={selectValue}>
-        <option value={all}>Choose your region</option>
-        <option value="northAm">North America</option>
+      <select className="filter" defaultValue="0" onChange={selectValue}>
+        <option value="0" disabled>Choose your region</option>
+        <option value="/Canada">Canada</option>
+        <option value="/United States">United States</option>
+        <option value="/Mexico">Mexico</option>
+        <option value="/Brazil">Brazil</option>
+        <option value="/Argentina">Argentina</option>
+        <option value="/Chile">Chile</option>
       </select>
     </div>
   );
