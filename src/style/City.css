@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+.city {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40vw;
+  background-color: #fd5092;
+  color: #fff;
+  background-image: url('../assets/world.png');
+  background-size: 100% 100%;
+  font-size: 50px;
+}
+
+.cityContainer {
+  width: 100%;
+  display: flex;
+  font-family: Lato, serif;
+  flex-direction: column;
+}
+
+.cityCard {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #fff;
+  gap: 5px;
+}
+
+.cityContainer .cityCard:nth-child(2n+1) {
+  background-color: #ce4377;
+}
+
+.cityContainer .cityCard:nth-child(2n+2) {
+  background-color: #e64886;
+}
+
+.cityArrow svg {
+  width: 35px;
+  color: #fff;
+}
