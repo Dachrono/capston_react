@@ -1,0 +1,18 @@
+.titleContainer {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40vw;
+  background-color: #fd5092;
+  color: #fff;
+  background-image: url('../assets/world.png');
+  background-size: 100% 100%;
+}
+
+select {
+  background-color: transparent;
+  font-size: 20px;
+  color: #313131;
+}

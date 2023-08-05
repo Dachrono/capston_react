@@ -1,0 +1,38 @@
+.headerContainer {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  background-color: #ec4c8a;
+}
+
+.return svg {
+  color: #fff;
+  width: 40px;
+}
+
+.weather {
+  width: 90%;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.micro {
+  cursor: pointer;
+  width: 5%;
+  padding-right: 5px;
+}
+
+.cog {
+  cursor: pointer;
+  width: 5%;
+  padding-right: 5px;
+}
+
+.micro svg {
+  width: 20px;
+}
+
+.cog svg {
+  width: 20px;
+}

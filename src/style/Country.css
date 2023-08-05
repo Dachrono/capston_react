@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+.banner {
+  width: 100%;
+  color: #fff;
+  background-color: #ec4c8a;
+  font-size: 1.2rem;
+}
+
+.banner p {
+  margin: 0;
+  padding-left: 15px;
+}
+
+.cardContainer {
+  width: 100%;
+  display: grid;
+  font-family: Lato, serif;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+}
+
+.card {
+  height: 200px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  color: #fff;
+  font-size: 25px;
+  background-color: #fd5092;
+}
+
+.cardContainer .card:nth-child(4n+2),
+.cardContainer .card:nth-child(4n+3) {
+  background-color: #ec4c8a;
+}
+
+.arrow svg {
+  color: #fff;
+  width: 35px;
+  margin-bottom: 100px;
+}
