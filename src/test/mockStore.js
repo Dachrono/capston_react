@@ -1,7 +1,7 @@
 import '@testing-library/jest-dom';
 import { configureStore } from '@reduxjs/toolkit';
 import locationSlice from '../redux/slices/locationSlice';
-import contentSlice from '../redux/slices/contentSlice';
+import { contentSlice } from '../redux/slices/contentSlice';
 
 const mockLocationData = [
   {
@@ -62,15 +62,17 @@ const mockLocationData = [
 
 const mockcontentData = [
   {
-  name: "Toronto",
-  sky: "few clouds",
-  temp: {feels_like: 292.87,
-     humidity: 79,
+    name: 'Toronto',
+    sky: 'few clouds',
+    temp: {
+      feels_like: 292.87,
+      humidity: 79,
       pressure: 1015,
-       temp: 292.79,
-        temp_max: 294.07,
-         temp_min: 291.18}
-  }
+      temp: 292.79,
+      temp_max: 294.07,
+      temp_min: 291.18,
+    },
+  },
 ];
 
 const initialState = {

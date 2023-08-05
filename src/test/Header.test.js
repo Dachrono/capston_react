@@ -10,7 +10,7 @@ describe('Test for the Header component', () => {
   });
 
   test('Test the content of ', () => {
-    const { container } = render(<MemoryRouter><Header routeRet="/Canada" /></MemoryRouter>);
+    render(<MemoryRouter><Header routeRet="/Canada" /></MemoryRouter>);
     const title = screen.getByText('Weather');
     expect(title).toBeInTheDocument();
   });

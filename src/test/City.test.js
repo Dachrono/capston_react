@@ -6,23 +6,27 @@ import City from '../components/City';
 
 describe('Test for the City component', () => {
   test('Check if the City component renders correctly', () => {
-    const { container } = render(<Provider store={store}>
+    const { container } = render(
+      <Provider store={store}>
         <MemoryRouter initialEntries={['/Canada']}>
           <Routes>
             <Route path="/:city" element={<City />} />
           </Routes>
         </MemoryRouter>
-      </Provider>);
+      </Provider>,
+    );
     expect(container).toMatchSnapshot();
   });
   test('Check if the City have 3 cards with cities', () => {
-    const { container } = render(<Provider store={store}>
+    const { container } = render(
+      <Provider store={store}>
         <MemoryRouter initialEntries={['/Canada']}>
           <Routes>
             <Route path="/:city" element={<City />} />
           </Routes>
         </MemoryRouter>
-      </Provider>);
+      </Provider>,
+    );
     expect(container.querySelectorAll('.cityCard').length).toBe(3);
   });
 });
