@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test for the location component Check if the location component renders correctly 1`] = `
+<div>
+  <div
+    class="titleContainer"
+  >
+    <h1>
+      Metrics | Wheather
+    </h1>
+    <select
+      class="filter"
+    >
+      <option
+        disabled=""
+        selected=""
+        value="0"
+      >
+        Choose your region
+      </option>
+      <option
+        value="/Canada"
+      >
+        Canada
+      </option>
+      <option
+        value="/United States"
+      >
+        United States
+      </option>
+      <option
+        value="/Mexico"
+      >
+        Mexico
+      </option>
+      <option
+        value="/Brazil"
+      >
+        Brazil
+      </option>
+      <option
+        value="/Argentina"
+      >
+        Argentina
+      </option>
+      <option
+        value="/Chile"
+      >
+        Chile
+      </option>
+    </select>
+  </div>
+</div>
+`;
